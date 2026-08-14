@@ -6,6 +6,11 @@ The data is encoded in a Unicode-compatible format.
 
 #### Requires .NET 8 or higher
 
+Nuget: https://www.nuget.org/packages/StringCipher.ChaCha20
+```
+dotnet add package StringCipher.ChaCha20 --version 1.0.0
+```
+
 
 ### How to use?
 
