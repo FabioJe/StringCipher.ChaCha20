@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Projektmappenelemente/">
+    <File Path="readme.md" />
+  </Folder>
+  <Project Path="StringCipher.ChaCha20.Example/StringCipher.ChaCha20.Example.csproj" />
+  <Project Path="StringCipher.ChaCha20/StringCipher.ChaCha20.csproj" />
+</Solution>
