@@ -7,11 +7,11 @@ string password = "Random password";
 //String example with string password
 string stringPayload = "Hallo World!";
 //Encrypt a string into a new encrypted string
-var encryptedText = ChaChaCipher.EncryptStringToString(stringPayload, password);
+string encryptedText = ChaChaCipher.EncryptStringToString(stringPayload, password);
 Console.WriteLine(encryptedText);
 
 //Decrypt string 
-var decryptedText = ChaChaCipher.DecryptToString(encryptedText, password);
+string decryptedText = ChaChaCipher.DecryptToString(encryptedText, password);
 
 Console.WriteLine("Same text: " + (decryptedText == stringPayload));
 Console.WriteLine("Decrypted text " + decryptedText);
@@ -32,6 +32,13 @@ encryptedBytes = ChaChaCipher.EncryptString(stringPayload, key);
 
 decryptedText = ChaChaCipher.DecryptToString(encryptedBytes, key);
 Console.WriteLine("Same text: " + (decryptedText == stringPayload));
+Console.WriteLine("Decrypted text " + decryptedText);
+
+
+// Using Extension Methods 
+
+encryptedText = stringPayload.EncryptString(password);
+decryptedText = encryptedText.DecryptString(password);
 Console.WriteLine("Decrypted text " + decryptedText);
 
 

@@ -11,7 +11,6 @@ Nuget: https://www.nuget.org/packages/StringCipher.ChaCha20
 dotnet add package StringCipher.ChaCha20 --version 1.0.0
 ```
 
-
 ### How to use?
 
 #### Import namespace
@@ -23,9 +22,9 @@ using StringCipher.ChaCha20;
 string password = "Random password";
 string stringPayload = "Hallo World!";
 //Encrypt a string into a new encrypted string
-var encryptedText = ChaChaCipher.EncryptStringToString(stringPayload, password);
+string encryptedText = ChaChaCipher.EncryptStringToString(stringPayload, password);
 //Decrypt string 
-var decryptedText = ChaChaCipher.DecryptToString(encryptedText, password);
+string decryptedText = ChaChaCipher.DecryptToString(encryptedText, password);
 ```
 
 #### Byte[] example with string password
@@ -39,5 +38,11 @@ byte[] decryptedBytes = ChaChaCipher.Decrypt(encryptedBytes, password);
 ```csharp
 byte[] key = ChaChaCipher.GenerateKey(); // The key must always be 32 bytes long. 
 byte[] encryptedBytes = ChaChaCipher.EncryptString(stringPayload, key);
-byte[] decryptedText = ChaChaCipher.DecryptToString(encryptedBytes, key);
+string decryptedText = ChaChaCipher.DecryptToString(encryptedBytes, key);
+```
+
+#### Using Extension Methods 
+```csharp
+string encryptedText = stringPayload.EncryptString(password);
+string decryptedText = encryptedText.DecryptString(password);
 ```

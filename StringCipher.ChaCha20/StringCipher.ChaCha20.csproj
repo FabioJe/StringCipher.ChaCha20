@@ -13,10 +13,10 @@
 		<Description>This package helps with encrypting and decrypting strings and data (byte[]). It uses ChaCha20-Poly1305 encryption.</Description>
 		<PackageProjectUrl>https://github.com/FabioJe/StringCipher.ChaCha20</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/FabioJe/StringCipher.ChaCha20</RepositoryUrl>		
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
-		<PackageVersion>1.0.0.0</PackageVersion>
-		<Version>1.0.0.0</Version>
+		<AssemblyVersion>1.0.1.0</AssemblyVersion>
+		<FileVersion>1.0.1.0</FileVersion>
+		<PackageVersion>1.0.1.0</PackageVersion>
+		<Version>1.0.1.0</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
