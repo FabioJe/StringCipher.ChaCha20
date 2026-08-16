@@ -8,7 +8,7 @@ The data is encoded in a Unicode-compatible format.
 
 Nuget: https://www.nuget.org/packages/StringCipher.ChaCha20
 ```
-dotnet add package StringCipher.ChaCha20 --version 1.0.0
+dotnet add package StringCipher.ChaCha20 --version 1.0.1
 ```
 
 ### How to use?
@@ -46,3 +46,6 @@ string decryptedText = ChaChaCipher.DecryptToString(encryptedBytes, key);
 string encryptedText = stringPayload.EncryptString(password);
 string decryptedText = encryptedText.DecryptString(password);
 ```
+
+
+#### The package is licensed under the Apache 2.0 License. There is no warranty. 
