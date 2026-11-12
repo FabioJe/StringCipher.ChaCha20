@@ -1,14 +1,14 @@
-# ChaCha20 string cipher 
+# ChaCha20 C# string cipher 
 
 Lightweight encrypting and decrypting solution for strings and data (byte[]). It uses latest ChaCha20-Poly1305 encryption.
 
 The data is encoded in a Unicode-compatible format. 
 
-#### Requires .NET 8 or higher
+#### Requires .NET 8, .NET10 or higher
 
 Nuget: https://www.nuget.org/packages/StringCipher.ChaCha20
 ```
-dotnet add package StringCipher.ChaCha20 --version 1.0.1
+dotnet add package StringCipher.ChaCha20 --version 1.0.1.1
 ```
 
 ### How to use?

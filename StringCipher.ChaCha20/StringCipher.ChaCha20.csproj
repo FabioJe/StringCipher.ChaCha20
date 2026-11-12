@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net10.0;net11.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -13,10 +13,10 @@
 		<Description>This package helps with encrypting and decrypting strings and data (byte[]). It uses ChaCha20-Poly1305 encryption.</Description>
 		<PackageProjectUrl>https://github.com/FabioJe/StringCipher.ChaCha20</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/FabioJe/StringCipher.ChaCha20</RepositoryUrl>		
-		<AssemblyVersion>1.0.1.0</AssemblyVersion>
-		<FileVersion>1.0.1.0</FileVersion>
-		<PackageVersion>1.0.1.0</PackageVersion>
-		<Version>1.0.1.0</Version>
+		<AssemblyVersion>1.0.1.1</AssemblyVersion>
+		<FileVersion>1.0.1.1</FileVersion>
+		<PackageVersion>1.0.1.1</PackageVersion>
+		<Version>1.0.1.1</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
